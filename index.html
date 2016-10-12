@@ -75,6 +75,7 @@ fbq('track', 'CompleteRegistration');
 
 </head>
 <body>
+	
 	<div class="container">
 		<div class="header">
 			<div class="logo"><img src="img/logo.png" alt="" class="logo-text"></div>
@@ -645,172 +646,176 @@ fbq('track', 'CompleteRegistration');
 
 		</div>
 
-		<div id="callback" class="mfp-hide">
-			<div class="form-title">Заказать<br /> звонок</div>
-			<div class="form-subtitle">Заполните форму и мы сразу вам перезвоним </div>
-			<form action="" method="post">
-				<input type="text" name="name" placeholder="Как вас зовут">
-				<input type="phone" required name="phone" placeholder="Телефон">
-				<input type="hidden" value="Заказ звонка" name="form_subject">
-				<button class="button head-button popup-button">Заказать звонок</button>
-			</form>
-		</div>
-
-		<div id="thank" class="mfp-hide">
-			<div class="cont">
-				<button class="mfp-close"></button>
-				<div class="form-title">Спасибо за обращение</div>
-				<div class="form-subtitle">Наш менеджер свяжется с вами в ближайшее время.</div>
-			</div>	
-		</div>
-
-		<div id="cart" class="mfp-hide cart-block">
-			<div class="cart"><button class="mfp-close"></button>
-
-				<div class="arrow arrow-left"><</div>
-				<div class="arrow arrow-right">></div>
-
-				<div class="images ramki active">
-					<img class="active" src="img/ramki/1.jpg" alt="">
-					<img src="img/ramki/2.jpg" alt="">
-					<img src="img/ramki/3.jpg" alt="">
-					<img src="img/ramki/4.jpg" alt="">
-					<img src="img/ramki/5.jpg" alt="">
-					<img src="img/ramki/6.jpg" alt="">
-					<img src="img/ramki/7.jpg" alt="">
-					<img src="img/ramki/8.jpg" alt="">
-					<img src="img/ramki/9.jpg" alt="">
-					<img src="img/ramki/10.jpg" alt="">
-					<img src="img/ramki/11.jpg" alt="">
-					<img src="img/ramki/12.jpg" alt="">
-					<img src="img/ramki/13.jpg" alt="">
-				</div>
-
-				<div class="images kompoz">
-					<img class="active" src="img/kompoz/1.jpg" alt="">
-					<img src="img/kompoz/2.jpg" alt="">
-					<img src="img/kompoz/3.jpg" alt="">
-					<img src="img/kompoz/4.jpg" alt="">
-				</div>
-
-				<div class="images derzhat">
-					<img class="active" src="img/derzhat/1.jpg" alt="">
-					<img src="img/derzhat/2.jpg" alt="">
-					<img src="img/derzhat/3.jpg" alt="">
-					<img src="img/derzhat/4.jpg" alt="">
-					<img src="img/derzhat/5.jpg" alt="">
-				</div>
-
-				<div class="images monogram">
-					<img class="active" src="img/monogram/1.jpg" alt="">
-					<img src="img/monogram/2.jpg" alt="">
-					<img src="img/monogram/3.jpg" alt="">
-					<img src="img/monogram/4.jpg" alt="">
-				</div>
-
-				<div class="images detsk-metr">
-					<img class="active" src="img/detsk-metr/1.jpg" alt="">
-					<img src="img/detsk-metr/2.jpg" alt="">
-					<img src="img/detsk-metr/3.jpg" alt="">
-					<img src="img/detsk-metr/4.jpg" alt="">
-					<img src="img/detsk-metr/5.jpg" alt="">
-				</div>
-
-				<div class="images derev-nadp">
-					<img class="active" src="img/derev-nadp/1.jpg" alt="">
-					<img src="img/derev-nadp/2.jpg" alt="">
-					<img src="img/derev-nadp/3.jpg" alt="">
-					<img src="img/derev-nadp/4.jpg" alt="">
-					<img src="img/derev-nadp/5.jpg" alt="">
-				</div>
-
-				<div class="images watch">
-					<img class="active" src="img/watch/1.jpg" alt="">
-					<img src="img/watch/2.jpg" alt="">
-					<img src="img/watch/3.jpg" alt="">
-					<img src="img/watch/4.jpg" alt="">
-					<img src="img/watch/5.jpg" alt="">
-				</div>
+		<div class="fixed-overlay fixed-overlay__modal hide">
+			<div class="modal">
 
 
-
-
-				<div class="descr">
-					<div class="title">Рамка «Супер муж»</div>
-					<div class="prop">
-						<div class="type">
-							Материал:
-						</div>
-						<div class="val material">
-							дерево
-						</div>
-						<div class="type">
-							Размер:
-						</div>
-						<div class="val size">
-							<span>61х112</span> см
-						</div>
-						<div class="type">
-							Доп. информация:
-						</div>
-						<div class="val dop-info">
-							супер-пупер
-						</div>
-						<div class="type price">
-							Стоимость:
-						</div>
-						<div class="val price">
-							<span>3500</span> руб.
-						</div>
-					</div>
-				</div>
-				<div class="form-block">
-					<form action="" method="post">
+				<div id="callback" class="hide">
+					<button class="mfp-close"></button>
+					<div class="form-title">Заказать<br /> звонок</div>
+					<div class="form-subtitle">Заполните форму и мы сразу вам перезвоним </div>
+					<form action="" method="post" >
 						<input type="text" name="name" placeholder="Как вас зовут">
 						<input type="phone" required name="phone" placeholder="Телефон">
 						<input type="hidden" value="Заказ звонка" name="form_subject">
 						<button class="button head-button popup-button">Заказать звонок</button>
 					</form>
-					<a class="an-size" href="#">или заказать<br /> другой размер</a>
-
 				</div>
-			</div>
+
+				<div id="thank" class="hide">
+
+					<div class="cont">
+						<button class="mfp-close"></button>
+						<div class="form-title">Спасибо за обращение</div>
+						<div class="form-subtitle">Наш менеджер свяжется с вами в ближайшее время.</div>
+					</div>	
+				</div>
+
+				<div id="cart" class="cart-block hide">
+					<div class="cart"><button class="mfp-close"></button>
+
+						<div class="arrow arrow-left"><</div>
+						<div class="arrow arrow-right">></div>
+
+						<div class="images ramki active">
+							<img class="active" src="img/ramki/1.jpg" alt="">
+							<img src="img/ramki/2.jpg" alt="">
+							<img src="img/ramki/3.jpg" alt="">
+							<img src="img/ramki/4.jpg" alt="">
+							<img src="img/ramki/5.jpg" alt="">
+							<img src="img/ramki/6.jpg" alt="">
+							<img src="img/ramki/7.jpg" alt="">
+							<img src="img/ramki/8.jpg" alt="">
+							<img src="img/ramki/9.jpg" alt="">
+							<img src="img/ramki/10.jpg" alt="">
+							<img src="img/ramki/11.jpg" alt="">
+							<img src="img/ramki/12.jpg" alt="">
+							<img src="img/ramki/13.jpg" alt="">
+						</div>
+
+						<div class="images kompoz">
+							<img class="active" src="img/kompoz/1.jpg" alt="">
+							<img src="img/kompoz/2.jpg" alt="">
+							<img src="img/kompoz/3.jpg" alt="">
+							<img src="img/kompoz/4.jpg" alt="">
+						</div>
+
+						<div class="images derzhat">
+							<img class="active" src="img/derzhat/1.jpg" alt="">
+							<img src="img/derzhat/2.jpg" alt="">
+							<img src="img/derzhat/3.jpg" alt="">
+							<img src="img/derzhat/4.jpg" alt="">
+							<img src="img/derzhat/5.jpg" alt="">
+						</div>
+
+						<div class="images monogram">
+							<img class="active" src="img/monogram/1.jpg" alt="">
+							<img src="img/monogram/2.jpg" alt="">
+							<img src="img/monogram/3.jpg" alt="">
+							<img src="img/monogram/4.jpg" alt="">
+						</div>
+
+						<div class="images detsk-metr">
+							<img class="active" src="img/detsk-metr/1.jpg" alt="">
+							<img src="img/detsk-metr/2.jpg" alt="">
+							<img src="img/detsk-metr/3.jpg" alt="">
+							<img src="img/detsk-metr/4.jpg" alt="">
+							<img src="img/detsk-metr/5.jpg" alt="">
+						</div>
+
+						<div class="images derev-nadp">
+							<img class="active" src="img/derev-nadp/1.jpg" alt="">
+							<img src="img/derev-nadp/2.jpg" alt="">
+							<img src="img/derev-nadp/3.jpg" alt="">
+							<img src="img/derev-nadp/4.jpg" alt="">
+							<img src="img/derev-nadp/5.jpg" alt="">
+						</div>
+
+						<div class="images watch">
+							<img class="active" src="img/watch/1.jpg" alt="">
+							<img src="img/watch/2.jpg" alt="">
+							<img src="img/watch/3.jpg" alt="">
+							<img src="img/watch/4.jpg" alt="">
+							<img src="img/watch/5.jpg" alt="">
+						</div>
 
 
-			<div class="top-form">
-				<div class="form-text">
-					<div class="form-maintext">
-						Хотите создать индивидуальный дизайн?
-						<div class="form-subtext"><i></i>В вашем распоряжении наша команда первоклассных дизайнеров! Просто отправьте запрос на разработку нетиповой контсрукции и получите неповторимый подарок, существующий в единственном экземпляре</div>
+
+
+						<div class="descr">
+							<div class="title">Рамка «Супер муж»</div>
+							<div class="prop">
+								<div class="type">
+									Материал:
+								</div>
+								<div class="val material">
+									дерево
+								</div>
+								<div class="type">
+									Размер:
+								</div>
+								<div class="val size">
+									<span>61х112</span> см
+								</div>
+								<div class="type">
+									Доп. информация:
+								</div>
+								<div class="val dop-info">
+									супер-пупер
+								</div>
+								<div class="type price">
+									Стоимость:
+								</div>
+								<div class="val price">
+									<span>3500</span> руб.
+								</div>
+							</div>
+						</div>
+						<div class="form-block">
+							<form action="" method="post">
+								<input type="text" name="name" placeholder="Как вас зовут">
+								<input type="phone" required name="phone" placeholder="Телефон">
+								<input type="hidden" value="Заказ звонка" name="form_subject">
+								<button class="button head-button popup-button">Заказать звонок</button>
+							</form>
+							<a class="an-size" href="#">или заказать<br /> другой размер</a>
+
+						</div>
 					</div>
-				</div>
 
-				<div class="form-block">
-					<form action="send.php" method="post">
-						<input type="phone" required name="phone" placeholder="Телефон">
-						<input type="hidden" value="Заказ разработки дизайна" name="form_subject">
-						<button class="button form-button">Заказать разработку дизайна</button>
-					</form>
-					<div class="form-sign">*это бесплатно<img src="img/form-smile.png" alt=""></div>
-				</div>
 
-				<div class="dost">Доставка по Москве, России и СНГ</div>
-				<div class="time">От идеи до готового подарка за 4 дня</div>
+					<div class="top-form">
+						<div class="form-text">
+							<div class="form-maintext">
+								Хотите создать индивидуальный дизайн?
+								<div class="form-subtext"><i></i>В вашем распоряжении наша команда первоклассных дизайнеров! Просто отправьте запрос на разработку нетиповой контсрукции и получите неповторимый подарок, существующий в единственном экземпляре</div>
+							</div>
+						</div>
 
+						<div class="form-block">
+							<form action="send.php" method="post">
+								<input type="phone" required name="phone" placeholder="Телефон">
+								<input type="hidden" value="Заказ разработки дизайна" name="form_subject">
+								<button class="button form-button">Заказать разработку дизайна</button>
+							</form>
+							<div class="form-sign">*это бесплатно<img src="img/form-smile.png" alt=""></div>
+						</div>
+
+						<div class="dost">Доставка по Москве, России и СНГ</div>
+						<div class="time">От идеи до готового подарка за 4 дня</div>
+
+					</div>
+
+				</div>	
 			</div>
-		</div>
 
 
+			<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+			<script src="js/jquery.bxslider.min.js"></script>
+			<script src="js/magnific.min.js"></script>
+			<script src="js/jquery.maskedinput.js"></script>
+			<script src="js/common.js"></script>
 
 
-
-
-		<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
-		<script src="js/jquery.bxslider.min.js"></script>
-		<script src="js/magnific.min.js"></script>
-		<script src="js/jquery.maskedinput.js"></script>
-		<script src="js/common.js"></script>
-
-
-	</body>
-	</html>
+		</body>
+		</html>

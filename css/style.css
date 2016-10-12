@@ -3,13 +3,14 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+html {min-width: 1170px;}
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
-	min-width: 1170px;
 	overflow-x: hidden;
+	min-width: 1170px;
+
 }
 
 ::-moz-placeholder {
@@ -29,6 +30,10 @@ body {
 input:invalid {
 	box-shadow: none;
 }
+
+.mfp-bg, .mfp-wrap, .mfp-container {
+	min-width: 1170px;
+} 
 
 .cart-block .top-form input::-webkit-placeholder {
 	color: #dadada;
@@ -390,7 +395,7 @@ strong {
 
 .section3 .arrows {
 	position: absolute;
-	left: 42%;
+	left: 575px;
 	z-index: 10;
 	top: 390px;
 }
@@ -615,13 +620,15 @@ span.green {
 }
 
 .section6 .text-pod-1 {
-	max-width: 870px;
 	margin-top: 58px;
 }
 
 .section6 .text-pod-2 {
-	margin-top: -266px;
+	margin-top: 245px;
 	margin-bottom: 60px;
+}
+.section6 .pod-2 {
+	float: right;
 }
 
 .section6 .pod-3 {
@@ -630,7 +637,6 @@ span.green {
 
 .section6 .text-pod-3 {
 	margin-top: 147px;
-	max-width: 870px;
 }
 
 .section6 .text-pod-3 i {
@@ -867,10 +873,12 @@ span.green {
 	background: url("../img/thank-bg.png") no-repeat center;
 	height: 395px;
 	padding: 90px 0;
+	width: 470px;
+	margin: 0 auto;
 }
 
 #thank .cont {
-	max-width: 470px;
+	
 	margin: 0 auto;
 	padding: 40px 0;
 	background-color: #fff;
@@ -942,8 +950,8 @@ button.mfp-close:active {
 
 .cart-block {
 	font-family: 'Ubuntu', sans-serif;
-	max-width: 1000px;
 	margin: 0 auto;
+	max-width: 1000px;
 
 }
 
@@ -1136,36 +1144,3 @@ button.mfp-close:active {
 
 
 
-.mfp-fade.mfp-bg {
-	opacity: 0;
-
-	-webkit-transition: all 0.25s ease-out;
-	-moz-transition: all 0.25s ease-out;
-	transition: all 0.25s ease-out;
-}
-/* overlay animate in */
-.mfp-fade.mfp-bg.mfp-ready {
-	opacity: 0.8;
-}
-/* overlay animate out */
-.mfp-fade.mfp-bg.mfp-removing {
-	opacity: 0;
-}
-
-/* content at start */
-.mfp-fade.mfp-wrap .mfp-content {
-	opacity: 0;
-
-	-webkit-transition: all 0.25s ease-out;
-	-moz-transition: all 0.25s ease-out;
-	transition: all 0.25s ease-out;
-}
-/* content animate it */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-	opacity: 1;
-	min-width: 1170px;
-}
-/* content animate out */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-	opacity: 0;
-}
